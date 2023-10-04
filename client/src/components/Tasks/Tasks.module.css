@@ -1,0 +1,9 @@
+.tasks {
+  background-color: var(--very-light-gray);
+  border-radius: 0.3rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.dark{
+  background-color: var(--very-dark-desaturated-blue);
+}

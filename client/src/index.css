@@ -1,0 +1,63 @@
+@import url("./global.css");
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../public/font/JosefinSans-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../public/font/JosefinSans-Bold.ttf");
+  font-weight: 700;
+}
+:root {
+    
+  --very-light-gray: hsl(0, 0%, 100%);
+  --very-light-grayish-blue: hsl(240, 12%, 97%);
+  --light-grayish-blue: hsl(233, 11%, 84%);
+  --dark-grayish-blue: hsl(236, 9%, 61%);
+  --very-dark-grayish-blue: hsl(235, 19%, 35%);
+  
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue: hsl(234, 39%, 85%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue: hsl(237, 14%, 26%);
+
+  --bg-dark: hsl(235, 21%, 11%);
+  --bg-light: hsl(240, 12%, 97%);
+  --bright-blue: hsl(220, 98%, 61%);
+  --shadow: 0px 1px 7px 1px #0002;
+  --gradient: linear-gradient(
+    135deg,
+    rgba(86, 221, 255, 1) 0%,
+    rgba(191, 88, 243, 1) 100%
+  );
+
+  --font: "Josefin Sans";
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html {
+  background-color: var(--bg-light);
+  transition: all 0.3s;
+}
+html.dark{
+  background-color: var(--bg-dark);
+}

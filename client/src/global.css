@@ -1,0 +1,7 @@
+.font-normal{
+  font: normal normal 400 1rem/1.5rem var(--font);
+}
+.center{
+  display: grid;
+  place-items: center;
+}

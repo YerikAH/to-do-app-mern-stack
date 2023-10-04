@@ -1,0 +1,43 @@
+.menu {
+  display: grid;
+  background-color: var(--very-light-gray);
+  border-radius: 0.3rem;
+  box-shadow: var(--shadow);
+  margin-top: 1rem;
+  position: fixed;
+  bottom: 4rem;
+  right: 1rem;
+  transition: all 0.3s;
+}
+.menu button {
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  font: normal normal 400 1rem/1.2rem var(--font);
+  color: var(--very-dark-grayish-blue);
+  text-align: left;
+  cursor: pointer;
+}
+.menu button:hover {
+  background-color: var(--very-light-grayish-blue);
+}
+.menu button:first-child {
+  margin-top: 0.5rem;
+}
+.menu button:last-child {
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 1000px) {
+  .menu {
+    position: static;
+  }
+}
+.dark {
+  background-color: var(--very-dark-desaturated-blue);
+}
+.dark button {
+  color: var(--very-light-gray);
+}
+.dark button:hover {
+  background-color: var(--very-dark-grayish-blue);
+}

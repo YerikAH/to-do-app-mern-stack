@@ -1,0 +1,14 @@
+.active{
+  color: var(--bright-blue);
+  transition: 0.3s;
+}
+.text{
+  color: var(--dark-grayish-blue);
+  transition: 0.3s;
+}
+.dark.text:hover{
+  color: var(--very-light-gray);
+}
+.text:hover{
+  color: var(--very-dark-grayish-blue)
+}
