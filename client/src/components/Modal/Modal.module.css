@@ -1,0 +1,41 @@
+.modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  max-width: 300px;
+  border-radius: 0.3rem;
+  background-color: var(--very-light-gray);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.modal__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 75%;
+  gap: 5%;
+  place-items: center;
+  place-content: center;
+  padding: 1.5rem 1rem;
+}
+.modal__counter {
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.title {
+  font: normal normal 600 1rem/1rem var(--font);
+  color: var(--very-dark-grayish-blue);
+}
+.text {
+  font: normal normal 400 0.8rem/1rem var(--font);
+  color: var(--very-dark-grayish-blue);
+}
+.icon {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}

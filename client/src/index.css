@@ -11,13 +11,12 @@
   font-weight: 700;
 }
 :root {
-    
   --very-light-gray: hsl(0, 0%, 100%);
   --very-light-grayish-blue: hsl(240, 12%, 97%);
   --light-grayish-blue: hsl(233, 11%, 84%);
   --dark-grayish-blue: hsl(236, 9%, 61%);
   --very-dark-grayish-blue: hsl(235, 19%, 35%);
-  
+
   --very-dark-blue: hsl(235, 21%, 11%);
   --very-dark-desaturated-blue: hsl(235, 24%, 19%);
   --light-grayish-blue: hsl(234, 39%, 85%);
@@ -28,13 +27,16 @@
 
   --bg-dark: hsl(235, 21%, 11%);
   --bg-light: hsl(240, 12%, 97%);
-  --bright-blue: hsl(220, 98%, 61%);
+  --bright-blue: #3a7bfd;
   --shadow: 0px 1px 7px 1px #0002;
   --gradient: linear-gradient(
     135deg,
     rgba(86, 221, 255, 1) 0%,
     rgba(191, 88, 243, 1) 100%
   );
+
+  --success: rgb(32, 226, 113);
+  --error: red;
 
   --font: "Josefin Sans";
 }
@@ -58,6 +60,6 @@ html {
   background-color: var(--bg-light);
   transition: all 0.3s;
 }
-html.dark{
+html.dark {
   background-color: var(--bg-dark);
 }
