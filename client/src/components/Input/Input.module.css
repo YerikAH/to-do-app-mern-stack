@@ -1,0 +1,55 @@
+input,
+label {
+  width: 100%;
+  font: normal normal 400 1rem/1.5rem var(--font);
+  color: var(--very-dark-desaturated-blue);
+}
+
+.input {
+  margin-top: 2rem;
+  position: relative;
+}
+.input input {
+  margin-top: 0.3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: var(--very-light-grayish-blue);
+  outline: none;
+}
+.input a {
+  font: normal normal 400 0.8rem/1.5rem var(--font);
+  cursor: pointer;
+  display: block;
+  text-align: right;
+  text-decoration: underline;
+  color: var(--bright-blue);
+  margin-top: 0.5rem;
+}
+.input__show {
+  position: absolute;
+  bottom: 2.5rem;
+  right: 1rem;
+  font: normal normal 700 0.8rem/1.5rem var(--font);
+  height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--very-dark-desaturated-blue);
+}
+.dark .input__show {
+  color: var(--very-light-gray);
+}
+.dark input {
+  color: var(--very-light-grayish-blue);
+}
+.dark label {
+  color: var(--dark-grayish-blue);
+}
+.dark input {
+  background-color: var(--very-dark-grayish-blue);
+  border: none;
+}

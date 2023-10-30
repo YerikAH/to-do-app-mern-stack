@@ -28,4 +28,16 @@ export interface ModalProps {
   color: string;
   title: string;
   text: string;
+  time: number;
+  reset: number;
+}
+
+export interface InputProps {
+  label: string;
+  name: string;
+  type: string;
+  placeholder: string;
+  onChange(
+    e: React.ChangeEvent<HTMLInputElement> | React.FormEvent<HTMLInputElement>
+  ): void;
 }

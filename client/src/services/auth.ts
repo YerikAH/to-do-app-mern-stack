@@ -5,6 +5,7 @@ import {
   RegisterBody,
   RegisterResponse,
   ErrorResponse,
+  LoginResponse,
 } from "../types/types";
 const BASE_URL = import.meta.env.VITE_BASE_URL_SERVER;
 
@@ -29,19 +30,18 @@ export const authApi = {
       return errorObj;
     }
   },
-  loginApi: async (body: LoginBody) => {
+  loginApi: async (body: LoginBody): Promise<LoginResponse | ErrorResponse> => {
     try {
       const response = await axios.post(`${BASE_URL}login`, body);
-      console.log("Te logueaste correctamente");
-      return response.data;
+      return new LoginResponse(response.data);
     } catch (err: any) {
       const error = err.response as AxiosResponse;
       const errorObj = {
-        message: error.data.error,
+        message: error.data,
         statusCode: error.status,
         statusText: error.statusText,
       };
-      return errorObj;
+      return new ErrorResponse(errorObj);
     }
   },
   logoutApi: async () => {
@@ -55,7 +55,7 @@ export const authApi = {
         statusCode: error.status,
         statusText: error.statusText,
       };
-      return errorObj;
+      return new ErrorResponse(errorObj);
     }
   },
 };
